@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".NotesActivity"/>
         <activity android:name=".SubscriptionActivity"/>
+        <activity android:name=".PhotoViewerActivity"/>
     </application>
 
 </manifest>

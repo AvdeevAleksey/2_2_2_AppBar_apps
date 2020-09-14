@@ -11,4 +11,7 @@
     <string name="userEmail">uname@example.com</string>
     <string name="subscribeToNewsletter">Подписка на рассылку успешно оформлена для пользователя\t</string>
     <string name="toEmailAddress">\tна электронный адрес\t</string>
+    <string name="btnBack">Назад</string>
+    <string name="btnForward">Вперед</string>
+    <string name="txtAdr">http://myfile.org/</string>
 </resources>

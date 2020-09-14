@@ -4,8 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.service.voice.VoiceInteractionSession;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -32,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
-
         if (id == R.id.action_open_notes) {
             //Toast.makeText(MainActivity.this, getText(R.string.open_netbook), Toast.LENGTH_LONG).show();
             Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
@@ -41,11 +44,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.subscription) {
-            //Toast.makeText(MainActivity.this, getText(R.string.open_netbook), Toast.LENGTH_LONG).show();
             Intent intentNotes = new Intent(MainActivity.this, SubscriptionActivity.class);
             startActivity(intentNotes);
             return true;
         }
+
+        if (id == R.id.photo_viewer) {
+            Intent intentNotes = new Intent(MainActivity.this, PhotoViewerActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
+
+        
 
         return super.onOptionsItemSelected(item);
     }
