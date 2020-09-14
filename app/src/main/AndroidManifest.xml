@@ -19,6 +19,9 @@
         <activity android:name=".NotesActivity"/>
         <activity android:name=".SubscriptionActivity"/>
         <activity android:name=".PhotoViewerActivity"/>
+        <activity android:name=".HealthMonitoringActivity"/>
+        <activity android:name=".PrassurePulse"/>
+        <activity android:name=".Vitals"/>
     </application>
 
 </manifest>

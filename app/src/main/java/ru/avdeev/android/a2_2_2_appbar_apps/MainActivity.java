@@ -55,7 +55,11 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-        
+        if (id == R.id.health_monitoring) {
+            Intent intentNotes = new Intent(MainActivity.this, HealthMonitoringActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

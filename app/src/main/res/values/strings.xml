@@ -14,4 +14,20 @@
     <string name="btnBack">Назад</string>
     <string name="btnForward">Вперед</string>
     <string name="txtAdr">http://myfile.org/</string>
+    <string name="progTitle">Комплексная система мониторинга здоровья</string>
+    <string name="developer">Авдеев А.</string>
+    <string name="fio">ФИО</string>
+    <string name="age">Возраст</string>
+    <string name="btn_pressure_pulse">Давление, пульс</string>
+    <string name="btn_vitals">Жизненные показатели</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="act_pressure_high_pressure">Верхнее давление</string>
+    <string name="act_pressure_lower_pressure">Нижнее давление</string>
+    <string name="act_pressure_pulse">Пульс</string>
+    <string name="act_pressure_tachicardia">Сдвинуть при\nтахикардии</string>
+    <string name="weight">Вес</string>
+    <string name="walk">Шаги</string>
+    <string name="main_invalid_input">Некорректно введены данные\n\tВ поле ФИО введите Фамилию и Инициалы,\n\tВ поле Возраст введите целое число.</string>
+    <string name="pressure_invalid_input">Некорректно введены данные\n\t Значения давления и пульса должны быть целыми.</string>
+    <string name="Not_all_values_are_entered">Не все значения введены</string>
 </resources>

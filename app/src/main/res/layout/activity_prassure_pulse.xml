@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7F4D9"
+    tools:context=".PrassurePulse">
+
+    <ImageView
+        android:id="@+id/imgPressureLower"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actPressureEditTextLower"
+        app:layout_constraintEnd_toStartOf="@+id/actPressureEditTextLower"
+        app:layout_constraintTop_toTopOf="@+id/actPressureEditTextLower"
+        app:srcCompat="@mipmap/ic_pressure_black_foreground" />
+
+    <Button
+        android:id="@+id/actPressureBtnSave"
+        android:layout_width="235dp"
+        android:layout_height="58dp"
+        android:background="#79EA7D"
+        android:onClick="btnSaveClicked"
+        android:text="@string/btn_save"
+        android:textColor="#D8FAD9"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureTxtDateTimeNow" />
+
+    <TextView
+        android:id="@+id/actPressureTxtHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/act_pressure_high_pressure"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureEditTextHigh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/actPressureTxtLower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/act_pressure_lower_pressure"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureEditTextLower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureEditTextHigh" />
+
+    <TextView
+        android:id="@+id/actPressureTxtPulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/act_pressure_pulse"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureEditTextPulse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureEditTextLower" />
+
+    <EditText
+        android:id="@+id/actPressureEditTextHigh"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:background="#E7FBE7"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureTxtLower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureTxtHigh" />
+
+    <EditText
+        android:id="@+id/actPressureEditTextLower"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:background="#E7FBE7"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureTxtPulse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureTxtLower" />
+
+    <EditText
+        android:id="@+id/actPressureEditTextPulse"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:background="#E7FBE7"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureSwitchTachicardia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureTxtPulse" />
+
+    <Switch
+        android:id="@+id/actPressureSwitchTachicardia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/act_pressure_tachicardia"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureTxtDateTimeNow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureEditTextPulse"
+        tools:checked="false" />
+
+    <TextView
+        android:id="@+id/actPressureTxtDateTimeNow"
+        android:layout_width="255dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/actPressureBtnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actPressureSwitchTachicardia" />
+
+    <ImageView
+        android:id="@+id/imgPressureHigh"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actPressureEditTextHigh"
+        app:layout_constraintEnd_toStartOf="@+id/actPressureEditTextHigh"
+        app:layout_constraintTop_toTopOf="@+id/actPressureEditTextHigh"
+        app:srcCompat="@mipmap/ic_pressure_black_foreground" />
+
+    <ImageView
+        android:id="@+id/imgHeartPulse"
+        android:layout_width="91dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actPressureEditTextPulse"
+        app:layout_constraintEnd_toStartOf="@+id/actPressureEditTextPulse"
+        app:layout_constraintTop_toTopOf="@+id/actPressureEditTextPulse"
+        app:srcCompat="@mipmap/ic_heart_black_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

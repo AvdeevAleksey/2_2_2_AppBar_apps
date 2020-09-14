@@ -24,6 +24,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/health_monitoring"
+        android:orderInCategory="100"
+        android:title="Мониторинг здоровья"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_open_notes"
         android:orderInCategory="100"
         android:title="Записная книжка"

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7F4D9"
+    android:onClick="btnPressurePulseClicked"
+    tools:context=".HealthMonitoringActivity">
+
+    <ImageView
+        android:id="@+id/topIcon"
+        android:layout_width="183dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart_pressure" />
+
+    <TextView
+        android:id="@+id/txtProgTitle"
+        android:layout_width="330dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="@string/progTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#630303"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:typeface="sans"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topIcon" />
+
+    <TextView
+        android:id="@+id/txtFio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/fio"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFio"
+        app:layout_constraintTop_toBottomOf="@+id/txtDeveloper" />
+
+    <EditText
+        android:id="@+id/editTextFio"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="#E7FBE7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#630303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFio" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextAge"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFio" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:background="#E7FBE7"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#630303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+    <Button
+        android:id="@+id/btnPrassurePulse"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#79EA7D"
+        android:onClick="btnPressurePulseClicked"
+        android:text="@string/btn_pressure_pulse"
+        android:textColor="#D8FAD9"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVitals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+
+    <Button
+        android:id="@+id/btnVitals"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:background="#79EA7D"
+        android:onClick="btnVitalsClicked"
+        android:text="@string/btn_vitals"
+        android:textColor="#D8FAD9"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrassurePulse" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="#79EA7D"
+        android:onClick="btnSaveClicked"
+        android:text="@string/btn_save"
+        android:textColor="#D8FAD9"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProgTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
