@@ -24,6 +24,7 @@
         <activity android:name=".Vitals"/>
         <activity android:name=".MutuallyCheckBoxActivity"/>
         <activity android:name=".SpinnerActivity"/>
+        <activity android:name=".CalendarViewActivity"/>
     </application>
 
 </manifest>

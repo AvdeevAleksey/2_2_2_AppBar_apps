@@ -42,6 +42,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/calendar_view"
+        android:orderInCategory="100"
+        android:title="CalendarView «Сроки задачи»"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_open_notes"
         android:orderInCategory="100"
         android:title="Записная книжка"

@@ -65,4 +65,8 @@
         <item>Брест</item>
         <item>Гродно</item>
     </string-array>
+    <string name="chooseStartDate">Дата-время старта задачи:\t</string>
+    <string name="chooseEndDate">Дата-время окончания задачи:\t</string>
+    <string name="mistake">Ошибка</string>
+    <string name="gross_error">Даты не введены</string>
 </resources>

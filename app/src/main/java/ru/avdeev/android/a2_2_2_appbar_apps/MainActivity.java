@@ -73,6 +73,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.calendar_view) {
+            Intent intentNotes = new Intent(MainActivity.this, CalendarViewActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }
