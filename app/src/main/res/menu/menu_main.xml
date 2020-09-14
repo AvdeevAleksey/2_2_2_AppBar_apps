@@ -30,6 +30,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/mutualy_checkbox"
+        android:orderInCategory="100"
+        android:title="Взаимоисключающие CheckBox"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_open_notes"
         android:orderInCategory="100"
         android:title="Записная книжка"

@@ -22,6 +22,7 @@
         <activity android:name=".HealthMonitoringActivity"/>
         <activity android:name=".PrassurePulse"/>
         <activity android:name=".Vitals"/>
+        <activity android:name=".MutuallyCheckBoxActivity"/>
     </application>
 
 </manifest>

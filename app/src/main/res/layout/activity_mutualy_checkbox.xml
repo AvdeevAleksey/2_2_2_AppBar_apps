@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MutuallyCheckBoxActivity">
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="36dp"
+        android:onClick="btnOkClicked"
+        android:text="@string/btn_ok"
+        app:layout_constraintEnd_toEndOf="@+id/cashCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/cashCheckBox" />
+
+    <CheckBox
+        android:id="@+id/mobileCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/From_mobile"
+        app:layout_constraintStart_toStartOf="@+id/bankCardCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/bankCardCheckBox" />
+
+    <CheckBox
+        android:id="@+id/bankCardCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/From_a_Bank_card"
+        app:layout_constraintStart_toStartOf="@+id/descriptionEditText"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+
+    <CheckBox
+        android:id="@+id/cashCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/In_cash_at_the_address"
+        app:layout_constraintStart_toStartOf="@+id/mobileCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/mobileCheckBox" />
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:hint="@string/Enter_the_amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="@string/Enter_the_payment_description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

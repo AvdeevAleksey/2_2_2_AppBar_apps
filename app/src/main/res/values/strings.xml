@@ -30,4 +30,16 @@
     <string name="main_invalid_input">Некорректно введены данные\n\tВ поле ФИО введите Фамилию и Инициалы,\n\tВ поле Возраст введите целое число.</string>
     <string name="pressure_invalid_input">Некорректно введены данные\n\t Значения давления и пульса должны быть целыми.</string>
     <string name="Not_all_values_are_entered">Не все значения введены</string>
+    <string name="btn_ok">Ок</string>
+    <string name="Enter_the_amount">Введите сумму</string>
+    <string name="Enter_the_payment_description">Ввод информации об оплате</string>
+    <string name="From_a_Bank_card">с банковской карты</string>
+    <string name="From_mobile">с мобильного телефона</string>
+    <string name="In_cash_at_the_address">наличными по адресу</string>
+    <string name="paid">оплачено</string>
+    <string name="Payment_method_not_selected">Не выбран способ оплаты</string>
+    <string name="Payment_details_for_the_amount">Платежные реквизиты на сумму</string>
+    <string name="used_to_pay_for">направлены для оплаты</string>
+    <string name="Invalid_payment_amount">Неверная сумма платежа</string>
+    <string name="Invalid_payment_attribute">Неверные атрибуты платежа</string>
 </resources>

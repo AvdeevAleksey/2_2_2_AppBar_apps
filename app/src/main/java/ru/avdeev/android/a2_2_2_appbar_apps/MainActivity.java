@@ -61,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.mutualy_checkbox) {
+            Intent intentNotes = new Intent(MainActivity.this, MutuallyCheckBoxActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }
