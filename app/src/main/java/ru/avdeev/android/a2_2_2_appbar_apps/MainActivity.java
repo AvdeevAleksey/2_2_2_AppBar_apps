@@ -67,6 +67,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.spinner) {
+            Intent intentNotes = new Intent(MainActivity.this, SpinnerActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

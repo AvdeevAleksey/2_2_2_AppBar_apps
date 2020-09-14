@@ -36,6 +36,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/spinner"
+        android:orderInCategory="100"
+        android:title="Спиннер Страна-Город-Дом"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_open_notes"
         android:orderInCategory="100"
         android:title="Записная книжка"

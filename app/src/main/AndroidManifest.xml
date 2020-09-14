@@ -23,6 +23,7 @@
         <activity android:name=".PrassurePulse"/>
         <activity android:name=".Vitals"/>
         <activity android:name=".MutuallyCheckBoxActivity"/>
+        <activity android:name=".SpinnerActivity"/>
     </application>
 
 </manifest>
