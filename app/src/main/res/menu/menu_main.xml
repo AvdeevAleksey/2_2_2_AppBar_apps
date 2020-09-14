@@ -12,6 +12,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/subscription"
+        android:orderInCategory="100"
+        android:title="Подписка"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_open_notes"
         android:orderInCategory="100"
         android:title="Записная книжка"

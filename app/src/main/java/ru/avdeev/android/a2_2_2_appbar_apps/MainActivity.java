@@ -32,9 +32,17 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
+
         if (id == R.id.action_open_notes) {
             //Toast.makeText(MainActivity.this, getText(R.string.open_netbook), Toast.LENGTH_LONG).show();
             Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
+
+        if (id == R.id.subscription) {
+            //Toast.makeText(MainActivity.this, getText(R.string.open_netbook), Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, SubscriptionActivity.class);
             startActivity(intentNotes);
             return true;
         }
